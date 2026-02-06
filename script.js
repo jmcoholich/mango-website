@@ -146,8 +146,20 @@ function copyBibTeX() {
       document.querySelector("#imageCarousel"),
       3000
     );
-    const successCarousel = new Carousel(
-      document.querySelector("#successCarousel"),
+    const blocksCarousel = new Carousel(
+      document.querySelector("#blocksCarousel"),
+      3000
+    );
+    const laptopCarousel = new Carousel(
+      document.querySelector("#laptopCarousel"),
+      3000
+    );
+    const cupsCarousel = new Carousel(
+      document.querySelector("#cupsCarousel"),
+      3000
+    );
+    const cokeCarousel = new Carousel(
+      document.querySelector("#cokeCarousel"),
       3000
     );
     const failureCarousel = new Carousel(
@@ -156,7 +168,7 @@ function copyBibTeX() {
     );
 
     // Add touch support
-    const carousels = [imageCarousel, successCarousel, failureCarousel];
+    const carousels = [imageCarousel, blocksCarousel, laptopCarousel, cupsCarousel, cokeCarousel, failureCarousel];
     carousels.forEach((carousel) => {
       let touchStartX = 0;
       let touchEndX = 0;
