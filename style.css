@@ -202,18 +202,28 @@ h2 {
 }
 
 .carousel-slide {
-  flex: 0 0 calc(33.333% - 20px);
-  margin: 0 10px;
+  flex: 0 0 calc(25% - 5px);
+  margin: 0 5px;
   height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+
 }
 
 .carousel-slide img,
 .carousel-slide iframe {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   border-radius: 8px;
   border: none;
+}
+.carousel-slide video {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: block;
 }
 
 .carousel-button {
